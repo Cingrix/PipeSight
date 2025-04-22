@@ -1,4 +1,4 @@
-🧠 Automated Defect Detection using Image Processing & Deep Learning
+#🧠 Automated Defect Detection using Image Processing & Deep Learning
 💡 Project Overview
 This project is designed to automate the detection of defects in images using a combination of image processing techniques and a Convolutional Neural Network (CNN) model. The primary goal is to assist industries in enhancing quality control by quickly and accurately identifying defective regions in product images.
 
