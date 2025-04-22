@@ -1,4 +1,3 @@
-readme_content = """
 # 🧠 Automated Defect Detection using Image Processing & Deep Learning  
 
 ## 💡 **Project Overview**
