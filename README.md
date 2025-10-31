@@ -22,6 +22,42 @@ This project integrates a trained deep learning model with a modern, responsive 
 - **Bun / Node.js** – For package management and build processes  
 
 ---
+# 🔬 Model Architecture and Training Process
+
+## ⚙️ **Key Features**
+- 🔍 **Defect Extraction:** Uses image masks to extract defect areas from the original images.
+- 🏷️ **Label Automation:** Automatically generates labels (Defect / No Defect) based on extracted image data.
+- 🤖 **Deep Learning Model:** A lightweight CNN built using PyTorch for binary classification of defects.
+- 💾 **Batch Processing:** Efficiently processes and labels large sets of training and test images.
+- 📊 **Prediction Output:** Generates CSV reports with predicted defect statuses for easy review.
+
+---
+
+## 🧑‍💻 **Technologies Used**
+- Python
+- OpenCV
+- Matplotlib
+- PyTorch
+- NumPy
+- Pandas
+
+---
+
+## 📊 **Model Training and Development Workflow**
+
+1. **Defect Extraction**  
+   Original images and their corresponding ground truth masks are processed. The mask isolates the defective region, creating a clean dataset of defect patches.
+
+2. **Label Generation**  
+   Each extracted image is labeled as `1` (Defect Present) or `0` (No Defect) based on pixel inspection.
+
+3. **Model Building**  
+   A custom CNN is trained to classify images as defective or non-defective. The model uses convolutional layers for feature extraction and fully connected layers for classification.
+
+4. **Model Training & Evaluation**  
+   The model is trained on the labeled dataset, validated, and saved for later inference.
+
+---
 
 ## 🗂️ Project Structure
 
@@ -62,6 +98,7 @@ cd ../frontend
 npm install
 npm run dev
 ```
+---
 
 🧪 Usage
 
@@ -76,39 +113,3 @@ The trained model predicts whether the pipeline is Defective or Normal.
 The result is displayed instantly with a confidence score.
 
 ---
-
-# 🔬 Model Architecture and Training Process
-
-## ⚙️ **Key Features**
-- 🔍 **Defect Extraction:** Uses image masks to extract defect areas from the original images.
-- 🏷️ **Label Automation:** Automatically generates labels (Defect / No Defect) based on extracted image data.
-- 🤖 **Deep Learning Model:** A lightweight CNN built using PyTorch for binary classification of defects.
-- 💾 **Batch Processing:** Efficiently processes and labels large sets of training and test images.
-- 📊 **Prediction Output:** Generates CSV reports with predicted defect statuses for easy review.
-
----
-
-## 🧑‍💻 **Technologies Used**
-- Python
-- OpenCV
-- Matplotlib
-- PyTorch
-- NumPy
-- Pandas
-
----
-
-## 📊 **Model Training and Development Workflow**
-
-1. **Defect Extraction**  
-   Original images and their corresponding ground truth masks are processed. The mask isolates the defective region, creating a clean dataset of defect patches.
-
-2. **Label Generation**  
-   Each extracted image is labeled as `1` (Defect Present) or `0` (No Defect) based on pixel inspection.
-
-3. **Model Building**  
-   A custom CNN is trained to classify images as defective or non-defective. The model uses convolutional layers for feature extraction and fully connected layers for classification.
-
-4. **Model Training & Evaluation**  
-   The model is trained on the labeled dataset, validated, and saved for later inference.
-
