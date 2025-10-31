@@ -77,7 +77,7 @@ The result is displayed instantly with a confidence score.
 
 ---
 
-#🔬 Model Architecture and Training Process
+# 🔬 Model Architecture and Training Process
 
 ## ⚙️ **Key Features**
 - 🔍 **Defect Extraction:** Uses image masks to extract defect areas from the original images.
