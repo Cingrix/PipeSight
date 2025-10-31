@@ -1,4 +1,4 @@
-# 🧠 Automated Defect Detection using Image Processing & Deep Learning  
+# 🧠 Automated Defect Detection using Image Processing & Deep Learning (PipeSight)
 
 ## 📖 Overview
 **PipeSight** is an **AI-powered defect detection system** designed to identify **leaks and defects in industrial pipelines** using **X-ray images**.  
