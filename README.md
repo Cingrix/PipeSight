@@ -108,7 +108,7 @@ Upload an X-ray image of a pipeline.
 
 The image is sent to the FastAPI backend for processing.
 
-The trained model predicts whether the pipeline is Defective or Normal.
+The trained model predicts whether the pipeline is Defective or Normalon the basis of the confidence score.
 
 The result is displayed instantly with a confidence score.
 
