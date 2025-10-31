@@ -98,7 +98,7 @@ The result is displayed instantly with a confidence score.
 
 ---
 
-## 🗂️ **Project Workflow**
+## 📊 **Model Training and Development Workflow**
 
 1. **Defect Extraction**  
    Original images and their corresponding ground truth masks are processed. The mask isolates the defective region, creating a clean dataset of defect patches.
@@ -112,5 +112,3 @@ The result is displayed instantly with a confidence score.
 4. **Model Training & Evaluation**  
    The model is trained on the labeled dataset, validated, and saved for later inference.
 
-5. **Inference on Test Set**  
-   The saved model is used to predict defects on new, unseen test images. The predictions are saved as a `.csv` file for review.
